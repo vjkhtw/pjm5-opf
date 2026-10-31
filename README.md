@@ -58,7 +58,11 @@ Economic dispatch (ED), DC optimal power flow (DC-OPF) and AC optimal power flow
 pjm5-opf/
 ├── README.md
 ├── requirements.txt
-├── notebooks/                            # four analysis and reference notebooks
+├── notebooks/
+│   ├── 01_dcopf_pyomo.ipynb              # ED, DC-OPF, LMPs and shadow prices (Pyomo + HiGHS)
+│   ├── 02_dcopf_pypower_reference.ipynb  # same case in PYPOWER, used as the DC reference solution
+│   ├── 03_acopf_pyomo.ipynb              # AC-OPF, losses, voltages, LMPs, ED/DC/AC comparison (Pyomo + IPOPT)
+│   └── 04_acopf_pypower_reference.ipynb  # same case in PYPOWER, used as the AC reference solution
 └── images/
 ```
 

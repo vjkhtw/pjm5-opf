@@ -1,0 +1,14 @@
+# Core modeling and solver interfaces
+pyomo>=6.8,<7
+highspy>=1.7
+idaes-pse>=2.5
+
+# Independent PYPOWER reference implementations
+PYPOWER>=5.1.18
+
+# Notebook runtime and plotting/data tools
+jupyter>=1.0
+ipykernel>=6.29
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.8

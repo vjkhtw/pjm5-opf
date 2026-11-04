@@ -75,6 +75,8 @@ The notebooks cover implementation and results. The derivations live in two note
 * [ED, DC-OPF, and AC-OPF](https://vesuvius-khatiwada.super.site/ed-dc-opf-and-ac-opf): the three formulations, congestion, and how to read duals as LMPs and line shadow prices.  
 * [Optimization Foundations for Energy System Modelling](https://vesuvius-khatiwada.super.site/optimization-foundations-for-energy-system-modelling): convexity, Lagrangians, KKT conditions, and a hand-worked economic dispatch.
 
+The full project write-up, with figures, is on the [project page](https://vesuvius-khatiwada.super.site/economic-dispatch-dc-opf-and-ac-opf-on-the-pjm-5-bus-network).
+
 
 ## **How to run**
 

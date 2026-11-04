@@ -12,7 +12,7 @@ Economic dispatch (ED), DC optimal power flow (DC-OPF) and AC optimal power flow
 
 *Figure 2\. AC-OPF on the same network. Bus colour and the first number are the active LMP, and the second is the voltage magnitude. Line colour and thickness show apparent-power loading against the MVA limit, and arrows show the direction of active power flow.*
 
-**Table 1\. ED, DC-OPF and AC-OPF compared**
+***Table 1\.** ED, DC-OPF and AC-OPF compared*
 
 | Result | ED | DC-OPF | AC-OPF |
 | ----- | ----- | ----- | ----- |
@@ -23,7 +23,7 @@ Economic dispatch (ED), DC optimal power flow (DC-OPF) and AC optimal power flow
 | LMP range (\$/MWh) | 30.00 (one price) | 10.00 to 39.94 | 10.00 to 39.71 |
 | Branch 6 shadow price | n/a | \$62.32/h per MW | \$61.31/h per MVA |
 
-**Table 2\. Active-power LMPs by bus (\$/MWh)**
+***Table 2\.* Active-power LMPs by bus (\$/MWh)*
 
 | Model | Bus 1 | Bus 2 | Bus 3 | Bus 4 | Bus 5 |
 | ----- | ----- | ----- | ----- | ----- | ----- |

@@ -75,7 +75,6 @@ The notebooks cover implementation and results. The derivations live in two note
 * [ED, DC-OPF, and AC-OPF](https://vesuvius-khatiwada.super.site/ed-dc-opf-and-ac-opf): the three formulations, congestion, and how to read duals as LMPs and line shadow prices.  
 * [Optimization Foundations for Energy System Modelling](https://vesuvius-khatiwada.super.site/optimization-foundations-for-energy-system-modelling): convexity, Lagrangians, KKT conditions, and a hand-worked economic dispatch.
 
-The full project write-up, with figures, is on the [project page](https://vesuvius-khatiwada.super.site/economic-dispatch-dc-opf-and-ac-opf-on-the-pjm-5-bus-network).
 
 ## **How to run**
 
@@ -91,7 +90,9 @@ The DC-OPF notebooks only need HiGHS (installed with `highspy`). The AC-OPF note
 
 ## **Limitations**
 
-This is a single-period model with linear generation costs and base-case line limits. There are no N-1 contingencies, reserves, unit commitment or bid-based offers, so the prices are simplified day-ahead-style LMPs, not PJM's actual prices. The DC-OPF model is lossless and ignores reactive power. AC-OPF is non-convex, so IPOPT returns a local optimum from a flat start; it matches the PYPOWER solution here, but that does not prove global optimality.
+The study uses a single-period formulation with linear generation costs. All generators are assumed to be available, with zero minimum generation, and startup costs and other unit commitment constraints are not considered. The DC-OPF uses a lossless network approximation and applies the line ratings as MW limits, so it does not account for transmission losses, reactive power or voltage constraints. The models also do not include reserves or N−1 contingency constraints. The AC-OPF solution agrees with PYPOWER for this case, but since the problem is non-convex, global optimality is not guaranteed. The resulting LMPs are model-derived prices, not actual PJM market prices.
+
+Future work could extend the study to multi-period dispatch with battery storage and N−1 security-constrained OPF. These would allow the model to consider how storage and transmission outages affect generator dispatch, operating costs and congestion.
 
 ## **Data**
 

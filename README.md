@@ -50,7 +50,7 @@ Economic dispatch (ED), DC optimal power flow (DC-OPF) and AC optimal power flow
 | DC-OPF | Linear program | Pyomo \+ HiGHS | Dispatch, flows, LMPs, line shadow price |
 | AC-OPF | Non-convex nonlinear program | Pyomo \+ IPOPT (flat start) | Dispatch, voltages, losses, active and reactive LMPs, line shadow price |
 
-**Validation.** DC-OPF and AC-OPF are solved again with PYPOWER, and the dispatch, cost, LMPs and shadow prices agree with the Pyomo results. The ED solution is also derived by hand with Lagrange multipliers and the KKT conditions in the [Optimization Foundations note](https://vesuvius-khatiwada.super.site/optimization-foundations-for-energy-system-modelling), which gives the same system price ($30/MWh)$ and cost (14,810/h) as the solver.
+**Validation.** DC-OPF and AC-OPF are solved again with PYPOWER, and the dispatch, cost, LMPs and shadow prices agree with the Pyomo results. The ED solution is also derived by hand with Lagrange multipliers and the KKT conditions in the [Optimization Foundations note](https://vesuvius-khatiwada.super.site/optimization-foundations-for-energy-system-modelling), which gives the same system price ($30/MWh)$ and cost (14,810/h) as the solver. A [companion AC-OPF validation project](https://github.com/vjkhtw/ac-opf-objective-check) also compares Pyomo/IPOPT and PYPOWER operating costs across six IEEE PGLib cases (14, 30, 39, 57, 118 and 162 buses); the largest relative objective difference is 5.2 × 10⁻⁸.
 
 ## **What is in this repo**
 
